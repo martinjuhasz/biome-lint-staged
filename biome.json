@@ -7,8 +7,7 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true
-		},
-		"ignore": ["./src/graphql/generated/*"]
+		}
 	},
 	"javascript": {
 		"formatter": {
@@ -18,11 +17,6 @@
 		}
 	},
 	"files": {
-		"ignore": [
-			"./build",
-			"./node_modules",
-			"./styled-system",
-			"./src/graphql/generated"
-		]
+		"ignore": ["./build", "./node_modules", "./src/ignore"]
 	}
 }
