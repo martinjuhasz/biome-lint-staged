@@ -1,0 +1,28 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.2.2/schema.json",
+	"organizeImports": {
+		"enabled": false
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		},
+		"ignore": ["./src/graphql/generated/*"]
+	},
+	"javascript": {
+		"formatter": {
+			"semicolons": "asNeeded",
+			"quoteStyle": "single",
+			"jsxQuoteStyle": "double"
+		}
+	},
+	"files": {
+		"ignore": [
+			"./build",
+			"./node_modules",
+			"./styled-system",
+			"./src/graphql/generated"
+		]
+	}
+}

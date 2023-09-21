@@ -1,0 +1,33 @@
+{
+  "name": "biome-lint-staged",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "prepare": "husky instal",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "pnpm biome check .",
+    "format": "pnpm biome format --write ."
+  },
+  "lint-staged": {
+    "*.{json,ts,tsx}": [
+      "pnpm lint"
+    ]
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.2.2",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.5"
+  }
+}
